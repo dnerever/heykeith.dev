@@ -31,23 +31,16 @@ Software engineer in Denver. I build reliable data and financial systems in **C#
 ## cat education.txt
 Studied toward a B.A. in Economics with a minor in Computer Science, University of Colorado Boulder
 
-<div class="terminal-static-cursor" aria-hidden="true"><span></span></div>
-
-## ./terminal
-
-Explore the page with a few commands. All résumé information is available above without JavaScript.
-
-<div class="terminal" data-terminal>
+<div class="terminal-interaction" data-terminal>
   <div class="terminal__output" id="terminal-output" role="log" aria-live="polite" aria-relevant="additions text">
-    <p class="terminal__line"><span class="terminal__prompt">keith@heykeith.dev:~$</span> <span>Type <code>help</code> to see available commands.</span></p>
+    <p class="terminal__response">Type <code>help</code> to explore this page.</p>
   </div>
   <form class="terminal__form" data-terminal-form aria-label="Interactive terminal" hidden>
-    <label class="visually-hidden" for="terminal-input">Enter a command</label>
+    <label class="visually-hidden" for="terminal-input">Enter a terminal command</label>
     <span class="terminal__prompt" aria-hidden="true">keith@heykeith.dev:~$</span>
     <input id="terminal-input" class="terminal__input" name="command" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="terminal-help">
-    <button class="terminal__submit" type="submit">Run</button>
+    <button class="terminal__submit" type="submit" aria-label="Run command">↵</button>
   </form>
-  <p class="terminal__help" id="terminal-help">Try <code>help</code>, <code>projects</code>, or <code>contact</code>.</p>
+  <span class="visually-hidden" id="terminal-help">Available commands: help, projects, contact, and clear.</span>
 </div>
-<noscript><p>The interactive prompt requires JavaScript; all résumé information is available above.</p></noscript>
 <script src="{{ '/assets/js/terminal.js' | relative_url }}" defer></script>
