@@ -1,6 +1,7 @@
 ---
 title: Keith
 description: Software engineer in Denver building reliable data and financial systems in C#/.NET, Blazor, and SQL.
+layout: default
 ---
 
 <div class="terminal-titlebar">
