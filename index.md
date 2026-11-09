@@ -1,6 +1,7 @@
 ---
-title: Keith
+title: heykeith.dev
 description: Software engineer in Denver building reliable data and financial systems in C#/.NET, Blazor, and SQL.
+image: /assets/og.png
 layout: default
 ---
 
