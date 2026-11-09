@@ -20,13 +20,14 @@ Software engineer in Denver. I build reliable data and financial systems in **C#
 - **Software Engineer (Specialist), Charles Schwab** <span class="muted">June 2026–present</span>
   - Cut user data upload time from up to 15 minutes to 30 seconds, and bulk upload processing from 1.5 hours to 10 minutes, using C# bulk inserts and set-based SQL.
   - Primary production support for about 30 time-sensitive daily batch jobs; wrote a same-day recovery runbook and reran every job in dependency order to meet audit deadlines.
-- **Cybersecurity Automation Engineer (Associate), Charles Schwab:** June 2025–June 2026
+- **Cybersecurity Automation Engineer (Associate), Charles Schwab** <span class="muted">June 2025–June 2026</span>
   - Automated cybersecurity workflows with Appian and Microsoft Power Platform.
-- **Cybersecurity Automation Engineer, Intern, Charles Schwab:** June–August 2024
+- **Cybersecurity Automation Engineer (Intern), Charles Schwab** <span class="muted">June–August 2024</span>
   - Wrote Python playbooks in Google Chronicle SOAR to automate incident response.
   - Designed new SOAR integrations with product owners.
   - Automated security operations center analyst workflows in Appian.
   - Returned full time to the same team after the internship (return offer).
+  <!-- TODO: OWNER CONFIRM whether SOAR playbooks and integrations continued in the Associate role; keep these claims under the internship until confirmed. -->
 
 ## ls projects/
 - **[Open Skillet](https://openskillet.com):** version control for recipes. Fork a recipe, edit it, and propose changes back. [Source on GitHub](https://github.com/DNEREVER/OpenRecipe).
