@@ -131,9 +131,13 @@ li {
   color: var(--text);
 }
 
-strong,
-b {
+p strong,
+li strong {
   color: var(--heading);
+}
+
+.muted {
+  color: var(--muted);
 }
 
 ul {
