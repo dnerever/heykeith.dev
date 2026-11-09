@@ -57,7 +57,7 @@
   };
 
   const commands = {
-    help: () => "Available commands: help, about, projects (ls), contact, education, stack, history, clear.",
+    help: () => "Available commands: help, about, projects, ls, contact, contact --all, education, stack, history, clear.",
     about: () => sectionParagraph("whoami") || "No about information is listed on this page.",
     projects: projectList,
     ls: projectList,
@@ -67,15 +67,9 @@
     stack: () => stackItems() || "No technology stack is listed on this page.",
     history: () => history.map((entry, index) => `${index + 1}  ${entry}`).join("\n") || "No commands in history.",
   };
-
   form.hidden = false;
-  input.placeholder = 'Type "help" to explore this page';
 
-  input.addEventListener("focus", () => {
-    form.classList.add("is-active");
-    positionCursor();
-  });
-  input.addEventListener("blur", () => form.classList.remove("is-active"));
+  input.addEventListener("focus", positionCursor);
   input.addEventListener("input", positionCursor);
   input.addEventListener("keyup", positionCursor);
   input.addEventListener("click", positionCursor);

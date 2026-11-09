@@ -131,9 +131,13 @@ li {
   color: var(--text);
 }
 
-strong,
-b {
+p strong,
+li strong {
   color: var(--heading);
+}
+
+.muted {
+  color: var(--muted);
 }
 
 ul {
@@ -150,14 +154,11 @@ li + li {
   margin-top: 0.35rem;
 }
 
-a {
+a,
+a:visited {
   color: var(--accent);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.16em;
-}
-
-a:visited {
-  color: var(--accent);
 }
 
 a:hover {
@@ -165,9 +166,15 @@ a:hover {
 }
 
 .terminal-interaction {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--rule);
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   line-height: 1.55;
+}
+
+.terminal__output .terminal__response:first-child {
+  margin-top: 0;
 }
 
 .terminal__output {
@@ -198,7 +205,6 @@ a:hover {
   min-width: 0;
   width: 100%;
   padding-top: 0.75rem;
-  border-top: 1px dashed var(--rule);
 }
 
 .terminal__form[hidden] {
@@ -228,11 +234,15 @@ a:hover {
 
 .terminal__input::placeholder {
   color: var(--muted);
-  opacity: 1;
+  opacity: 0.7;
+}
+
+.terminal__input:placeholder-shown {
+  text-indent: 0.65em;
 }
 
 .terminal__cursor {
-  display: none;
+  display: block;
   position: absolute;
   top: 0.1em;
   left: var(--terminal-cursor-offset, 0);
@@ -240,10 +250,6 @@ a:hover {
   height: 1em;
   background: var(--prompt);
   pointer-events: none;
-}
-
-.terminal__form.is-active .terminal__input:not(:placeholder-shown) + .terminal__cursor {
-  display: block;
   animation: terminal-cursor-blink 1.1s steps(2, start) infinite;
 }
 
@@ -325,5 +331,9 @@ a:hover {
   .terminal__prompt::after {
     content: "$";
     font-size: 1rem;
+  }
+
+  .terminal__input {
+    font-size: 16px;
   }
 }
