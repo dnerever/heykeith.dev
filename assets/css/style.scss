@@ -154,15 +154,21 @@ li + li {
   margin-top: 0.35rem;
 }
 
-a,
-a:visited {
+.page-content a:link,
+.page-content a:visited,
+.page-content a:hover,
+.page-content a:active,
+.page-content a:focus {
   color: var(--accent);
+}
+
+.page-content a {
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.16em;
 }
 
-a:hover {
-  color: var(--accent);
+.page-content a:hover,
+.page-content a:focus-visible {
   text-decoration-thickness: 0.14em;
 }
 
@@ -183,6 +189,23 @@ a:hover {
   overflow: auto;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+.page-content .highlighter-rouge,
+.page-content .highlighter-rouge .highlight,
+.page-content .highlighter-rouge pre,
+.page-content .highlighter-rouge pre code {
+  background-color: var(--card-bg);
+}
+
+.page-content .highlighter-rouge pre {
+  border-color: var(--rule);
+  color: var(--text);
+}
+
+.page-content .highlighter-rouge ::selection {
+  background-color: #264f78;
+  color: var(--heading);
 }
 
 .terminal__line {
