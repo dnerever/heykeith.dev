@@ -39,7 +39,10 @@ Studied toward a B.A. in Economics with a minor in Computer Science, University 
   <form class="terminal__form" data-terminal-form aria-label="Interactive terminal" hidden>
     <label class="visually-hidden" for="terminal-input">Enter a terminal command</label>
     <span class="terminal__prompt" aria-hidden="true">keith@heykeith.dev:~$</span>
-    <input id="terminal-input" class="terminal__input" name="command" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="terminal-help">
+    <span class="terminal__input-wrap">
+      <input id="terminal-input" class="terminal__input" name="command" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="terminal-help">
+      <span class="terminal__cursor" aria-hidden="true"></span>
+    </span>
     <button class="terminal__submit" type="submit" aria-label="Run command">↵</button>
   </form>
   <span class="visually-hidden" id="terminal-help">Available commands: help, projects, contact, and clear.</span>
