@@ -30,14 +30,14 @@ Software engineer in Denver. I build reliable data and financial systems in **C#
   <!-- TODO: OWNER CONFIRM whether SOAR playbooks and integrations continued in the Associate role; keep these claims under the internship until confirmed. -->
 
 ## ls projects/
-- **[Open Skillet](https://openskillet.com):** version control for recipes. Fork a recipe, edit it, and propose changes back. [Source on GitHub](https://github.com/DNEREVER/OpenRecipe).
+- **[Open Skillet](https://openskillet.com):** version control for recipes. Fork a recipe, edit it, and propose changes back. [Source on GitHub](https://github.com/dnerever/OpenRecipe).
   - TypeScript, React, Node.js, PostgreSQL; hosted on Render, with GitHub Actions CI, Playwright end-to-end tests, and CodeQL/Dependabot scanning.
 - **DonorEngine:** a direct-mail planner for nonprofits, built solo in a 24-hour hackathon. Code available on request.
 - **LambdaConf 2024 Hackathon:** track winner; co-built a matching engine in TypeScript on DBOS Cloud.
 
 ## contact &#45;&#45;all
 - Email: [keith@heykeith.dev](mailto:keith@heykeith.dev)
-- GitHub: [github.com/DNEREVER](https://github.com/DNEREVER)
+- GitHub: [github.com/dnerever](https://github.com/dnerever)
 - LinkedIn: [linkedin.com/in/keith-code](https://linkedin.com/in/keith-code)
 
 ## cat education.txt
