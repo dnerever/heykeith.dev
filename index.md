@@ -1,6 +1,7 @@
 ---
-title: Keith
+title: heykeith.dev
 description: Software engineer in Denver building reliable data and financial systems in C#/.NET, Blazor, and SQL.
+image: /assets/og.png
 layout: default
 ---
 
@@ -16,15 +17,24 @@ layout: default
 Software engineer in Denver. I build reliable data and financial systems in **C#/.NET, Blazor, and SQL**.
 
 ## cat work.log
-- **Software Engineer, Charles Schwab:** build and maintain systems that run a financial firm's daily calculations in C#/.NET, Blazor, and SQL.
-- **Previously, Security Automation, Charles Schwab:** automated cybersecurity workflows with Appian and Microsoft Power Platform.
+- **Software Engineer, Specialist, Charles Schwab:** June 2026 to present
+  - Cut user data upload time from up to 15 minutes to 30 seconds, and bulk upload processing from 1.5 hours to 10 minutes, using C# bulk inserts and set-based SQL.
+  - Primary production support for about 30 time-sensitive daily batch jobs; wrote a same-day recovery runbook and reran every job in dependency order to meet audit deadlines.
+- **Cybersecurity Automation Engineer (Associate), Charles Schwab:** June 2025–June 2026
+  - Automated cybersecurity workflows with Appian and Microsoft Power Platform.
+- **Cybersecurity Automation Engineer, Intern, Charles Schwab:** June–August 2024
+  - Wrote Python playbooks in Google Chronicle SOAR to automate incident response.
+  - Designed new SOAR integrations with product owners.
+  - Automated security operations center analyst workflows in Appian.
+  - Returned full time to the same team after the internship (return offer).
 
 ## ls projects/
 - **[Open Skillet](https://openskillet.com):** version control for recipes. Fork a recipe, edit it, and propose changes back. [Source on GitHub](https://github.com/DNEREVER/OpenRecipe).
+  - TypeScript, React, Node.js, PostgreSQL; hosted on Render, with GitHub Actions CI, Playwright end-to-end tests, and CodeQL/Dependabot scanning.
 - **DonorEngine:** a direct-mail planner for nonprofits, built solo in a 24-hour hackathon. Code available on request.
-- **LambdaConf 2024 Hackathon:** co-built a matching engine in TypeScript on DBOS Cloud.
+- **LambdaConf 2024 Hackathon:** track winner; co-built a matching engine in TypeScript on DBOS Cloud.
 
-## contact --all
+## contact &#45;&#45;all
 - Email: [keith@heykeith.dev](mailto:keith@heykeith.dev)
 - GitHub: [github.com/DNEREVER](https://github.com/DNEREVER)
 - LinkedIn: [linkedin.com/in/keith-code](https://linkedin.com/in/keith-code)
@@ -45,6 +55,6 @@ Studied toward a B.A. in Economics with a minor in Computer Science, University 
     </span>
     <button class="terminal__submit" type="submit" aria-label="Run command">↵</button>
   </form>
-  <span class="visually-hidden" id="terminal-help">Available commands: help, projects, contact, and clear.</span>
+  <span class="visually-hidden" id="terminal-help">Available commands: help, about, projects, ls, contact, contact --all, education, stack, history, and clear. Use the up and down arrow keys to navigate command history.</span>
 </div>
 <script src="{{ '/assets/js/terminal.js' | relative_url }}" defer></script>
