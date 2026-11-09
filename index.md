@@ -50,7 +50,7 @@ Studied toward a B.A. in Economics with a minor in Computer Science, University 
     <label class="visually-hidden" for="terminal-input">Enter a terminal command</label>
     <span class="terminal__prompt" aria-hidden="true">keith@heykeith.dev:~$</span>
     <span class="terminal__input-wrap">
-      <input id="terminal-input" class="terminal__input" name="command" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="terminal-help">
+      <input id="terminal-input" class="terminal__input" name="command" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="try: help, projects, contact" aria-describedby="terminal-help">
       <span class="terminal__cursor" aria-hidden="true"></span>
     </span>
     <button class="terminal__submit" type="submit" aria-label="Run command">↵</button>
