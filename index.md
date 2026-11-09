@@ -16,15 +16,18 @@ layout: default
 Software engineer in Denver. I build reliable data and financial systems in **C#/.NET, Blazor, and SQL**.
 
 ## cat work.log
+<!-- TODO (owner): Add start years/tenure for each Charles Schwab role and one impact line for the Software Engineer role. -->
 - **Software Engineer, Charles Schwab:** build and maintain systems that run a financial firm's daily calculations in C#/.NET, Blazor, and SQL.
+<!-- TODO (owner): Confirm the actual title and start year/tenure for the Security Automation role. -->
 - **Previously, Security Automation, Charles Schwab:** automated cybersecurity workflows with Appian and Microsoft Power Platform.
 
 ## ls projects/
+<!-- TODO (owner): Add the Open Skillet technology stack. -->
 - **[Open Skillet](https://openskillet.com):** version control for recipes. Fork a recipe, edit it, and propose changes back. [Source on GitHub](https://github.com/DNEREVER/OpenRecipe).
 - **DonorEngine:** a direct-mail planner for nonprofits, built solo in a 24-hour hackathon. Code available on request.
-- **LambdaConf 2024 Hackathon:** co-built a matching engine in TypeScript on DBOS Cloud.
+- **LambdaConf 2024 Hackathon:** track winner; co-built a matching engine in TypeScript on DBOS Cloud.
 
-## contact --all
+## contact &#45;&#45;all
 - Email: [keith@heykeith.dev](mailto:keith@heykeith.dev)
 - GitHub: [github.com/DNEREVER](https://github.com/DNEREVER)
 - LinkedIn: [linkedin.com/in/keith-code](https://linkedin.com/in/keith-code)
