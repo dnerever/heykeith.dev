@@ -173,13 +173,44 @@ a:hover {
 }
 
 .terminal__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
   min-width: 0;
-  flex: 1;
   border: 0;
+  padding: 0;
   background: transparent;
   color: var(--text);
-  caret-color: var(--prompt);
+  caret-color: transparent;
   font: inherit;
+}
+
+.terminal__input-wrap {
+  position: relative;
+  min-width: 0;
+  flex: 1;
+}
+
+.terminal__cursor {
+  display: none;
+  position: absolute;
+  top: 0.1em;
+  left: var(--terminal-cursor-offset, 0);
+  width: 0.55em;
+  height: 1em;
+  background: var(--prompt);
+  pointer-events: none;
+}
+
+.terminal__form.is-active .terminal__cursor {
+  display: block;
+  animation: terminal-cursor-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes terminal-cursor-blink {
+  to {
+    visibility: hidden;
+  }
 }
 
 .terminal__submit {
@@ -217,6 +248,12 @@ a:hover {
 
 .terminal-interaction :focus-visible {
   outline-color: var(--prompt);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal__cursor {
+    animation: none !important;
+  }
 }
 
 @media (max-width: 36rem) {
