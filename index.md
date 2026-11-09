@@ -49,6 +49,6 @@ Studied toward a B.A. in Economics with a minor in Computer Science, University 
     </span>
     <button class="terminal__submit" type="submit" aria-label="Run command">↵</button>
   </form>
-  <span class="visually-hidden" id="terminal-help">Available commands: help, projects, contact, and clear.</span>
+  <span class="visually-hidden" id="terminal-help">Available commands: help, about, projects, ls, contact, contact --all, education, stack, history, and clear. Use the up and down arrow keys to navigate command history.</span>
 </div>
 <script src="{{ '/assets/js/terminal.js' | relative_url }}" defer></script>
