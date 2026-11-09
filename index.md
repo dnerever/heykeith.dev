@@ -41,7 +41,7 @@ Software engineer in Denver. I build reliable data and financial systems in **C#
 - LinkedIn: [linkedin.com/in/keith-code](https://linkedin.com/in/keith-code)
 
 ## cat education.txt
-Studied toward a B.A. in Economics with a minor in Computer Science, University of Colorado Boulder
+Studied toward a B.A. in Economics with a minor in Computer Science, University of Colorado Boulder.
 
 <div class="terminal-interaction" data-terminal>
   <div class="terminal__output" id="terminal-output" role="log" aria-live="polite" aria-relevant="additions text">
@@ -56,6 +56,6 @@ Studied toward a B.A. in Economics with a minor in Computer Science, University 
     </span>
     <button class="terminal__submit" type="submit" aria-label="Run command">↵</button>
   </form>
-  <span class="visually-hidden" id="terminal-help">Available commands: help, about, projects, ls, contact, contact --all, education, stack, history, and clear. Use the up and down arrow keys to navigate command history.</span>
+  <span class="visually-hidden" id="terminal-help">Available commands: help, about, projects, ls, contact, contact --all, education, stack, history, clear. Use the up and down arrow keys to navigate command history.</span>
 </div>
 <script src="{{ '/assets/js/terminal.js' | relative_url }}" defer></script>

@@ -57,7 +57,7 @@
   };
 
   const commands = {
-    help: () => "Available commands: help, about, projects (ls), contact, education, stack, history, clear.",
+    help: () => "Available commands: help, about, projects, ls, contact, contact --all, education, stack, history, clear.",
     about: () => sectionParagraph("whoami") || "No about information is listed on this page.",
     projects: projectList,
     ls: projectList,
