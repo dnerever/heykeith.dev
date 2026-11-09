@@ -1,6 +1,6 @@
 ---
 title: heykeith.dev
-description: Software engineer in Denver building reliable data and financial systems in C#/.NET, Blazor, and SQL.
+description: Full-stack software engineer in Denver. I build reliable financial systems in C#/.NET and SQL Server, and full-stack TypeScript apps with React and Postgres. Security-minded, with a background in security automation.
 image: /assets/og.png
 layout: default
 ---
@@ -14,12 +14,11 @@ layout: default
 
 ## whoami
 
-Software engineer in Denver. I build reliable data and financial systems in **C#/.NET, Blazor, and SQL**.
+Full-stack software engineer in Denver. I build reliable financial systems in C#/.NET and SQL Server, and full-stack TypeScript apps with React and Postgres. Security-minded, with a background in security automation.
 
 ## cat work.log
 - **Software Engineer (Specialist), Charles Schwab** <span class="muted">June 2026–present</span>
-  - Cut user data upload time from up to 15 minutes to 30 seconds, and bulk upload processing from 1.5 hours to 10 minutes, using C# bulk inserts and set-based SQL.
-  - Primary production support for about 30 time-sensitive daily batch jobs; wrote a same-day recovery runbook and reran every job in dependency order to meet audit deadlines.
+  - Build and support reliable financial systems using C#/.NET and SQL Server.
 - **Cybersecurity Automation Engineer (Associate), Charles Schwab** <span class="muted">June 2025–June 2026</span>
   - Automated cybersecurity workflows with Appian and Microsoft Power Platform.
 - **Cybersecurity Automation Engineer (Intern), Charles Schwab** <span class="muted">June–August 2024</span>
@@ -30,10 +29,11 @@ Software engineer in Denver. I build reliable data and financial systems in **C#
   <!-- TODO: OWNER CONFIRM whether SOAR playbooks and integrations continued in the Associate role; keep these claims under the internship until confirmed. -->
 
 ## ls projects/
-- **[Open Skillet](https://openskillet.com):** version control for recipes. Fork a recipe, edit it, and propose changes back. [Source on GitHub](https://github.com/dnerever/OpenRecipe).
-  - TypeScript, React, Node.js, PostgreSQL; hosted on Render, with GitHub Actions CI, Playwright end-to-end tests, and CodeQL/Dependabot scanning.
-- **DonorEngine:** a direct-mail planner for nonprofits, built solo in a 24-hour hackathon. Code available on request.
-- **LambdaConf 2024 Hackathon:** track winner; co-built a matching engine in TypeScript on DBOS Cloud.
+- **[Open Skillet](https://openskillet.com) ([source](https://github.com/dnerever/OpenRecipe)):** version control for recipes. Fork a recipe, edit it, and propose changes back.
+  - TypeScript, React, Node.js, and Postgres; deployed on Render.
+  - Email sign-up, password reset, and rate limiting.
+  - GitHub Actions CI, Playwright end-to-end tests, accessibility checks, CodeQL, and Dependabot.
+- **DonorEngine** ([live demo](https://donorengine.onrender.com/)): a direct-mail planner for nonprofits, built solo in a 24-hour hackathon. Rules set every amount and date, an LLM writes the copy, and every AI-generated line passes a grounding check. An in-browser prediction model is tested against baselines. TypeScript. Code available on request.
 
 ## contact &#45;&#45;all
 - Email: [keith@heykeith.dev](mailto:keith@heykeith.dev)
