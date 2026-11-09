@@ -13,10 +13,13 @@
   const positionCursor = () => {
     const inputStyle = getComputedStyle(input);
 
-    measureContext.font = inputStyle.font;
-    const caretPosition = input.selectionStart ?? input.value.length;
+    measureContext.font = `${inputStyle.fontStyle} ${inputStyle.fontWeight} ${inputStyle.fontSize} ${inputStyle.fontFamily}`;
+    const caretPosition = input.selectionDirection === "backward"
+      ? input.selectionStart
+      : input.selectionEnd;
     const textWidth = measureContext.measureText(input.value.slice(0, caretPosition)).width;
-    inputWrap.style.setProperty("--terminal-cursor-offset", `${textWidth - input.scrollLeft}px`);
+    const letterSpacing = inputStyle.letterSpacing === "normal" ? 0 : Number.parseFloat(inputStyle.letterSpacing);
+    inputWrap.style.setProperty("--terminal-cursor-offset", `${textWidth + letterSpacing * caretPosition - input.scrollLeft}px`);
   };
 
   const findSection = (sectionName) => Array.from(document.querySelectorAll(".page-content h2"))
@@ -75,6 +78,7 @@
   input.addEventListener("click", positionCursor);
   input.addEventListener("scroll", positionCursor);
   input.addEventListener("select", positionCursor);
+  window.addEventListener("resize", positionCursor);
   input.addEventListener("keydown", (event) => {
     if (event.key === "ArrowUp") {
       event.preventDefault();
