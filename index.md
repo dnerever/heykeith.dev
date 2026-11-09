@@ -17,7 +17,7 @@ layout: default
 Software engineer in Denver. I build reliable data and financial systems in **C#/.NET, Blazor, and SQL**.
 
 ## cat work.log
-- **Software Engineer, Specialist, Charles Schwab:** June 2026 to present
+- **Software Engineer (Specialist), Charles Schwab** <span class="muted">June 2026–present</span>
   - Cut user data upload time from up to 15 minutes to 30 seconds, and bulk upload processing from 1.5 hours to 10 minutes, using C# bulk inserts and set-based SQL.
   - Primary production support for about 30 time-sensitive daily batch jobs; wrote a same-day recovery runbook and reran every job in dependency order to meet audit deadlines.
 - **Cybersecurity Automation Engineer (Associate), Charles Schwab:** June 2025–June 2026
