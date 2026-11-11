@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { education, profile, projects, skills, workHistory } from "../data/site";
+---
+
+<BaseLayout title={`${profile.name} | ${profile.title}`} description={profile.description}>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Keith, back to top">Keith B.</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="intro-title">
+        <p class="eyebrow">Software engineer · Denver, Colorado</p>
+        <h1 id="intro-title">Hi, I'm Keith.</h1>
+        <p class="intro">{profile.description}</p>
+        <ul class="social-links" aria-label="Contact and profiles">
+          <li><a href={`mailto:${profile.email}`}>Email</a></li>
+          <li><a href={profile.github} target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">A few things I've made</p>
+          <h2 id="projects-title">Selected projects</h2>
+        </div>
+        <div class="project-list">
+          {projects.map((project) => (
+            <article class="project-card">
+              <a class="project-image-link" href={project.url} target="_blank" rel="noreferrer" aria-label={`Visit ${project.name}`}>
+                <img src={project.image} alt={project.imageAlt} width="1280" height="800" loading="lazy" />
+              </a>
+              <div class="project-copy">
+                <h3>{project.name}</h3>
+                <p class="project-description">{project.description}</p>
+                <ul class="project-details">
+                  {project.details.map((detail) => <li>{detail}</li>)}
+                </ul>
+                <p class="project-links">
+                  <a href={project.url} target="_blank" rel="noreferrer">Visit project <span aria-hidden="true">↗</span></a>
+                  {"source" in project && (
+                    <a href={project.source} target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+                  )}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <div class="details-grid">
+        <section id="work" class="section work-section" aria-labelledby="work-title">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="work-title">Work</h2>
+          </div>
+          <div class="timeline">
+            {workHistory.map((role) => (
+              <article class="role">
+                <h3>{role.title}</h3>
+                <p class="role-dates">{role.dates}</p>
+                <ul>
+                  {role.details.map((detail) => <li>{detail}</li>)}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <div class="side-sections">
+          <section class="section skills-section" aria-labelledby="skills-title">
+            <div class="section-heading">
+              <p class="eyebrow">What I work with</p>
+              <h2 id="skills-title">Skills</h2>
+            </div>
+            <dl class="skills-list">
+              {skills.map((skill) => (
+                <div>
+                  <dt>{skill.label}</dt>
+                  <dd>{skill.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+
+          <section class="section education-section" aria-labelledby="education-title">
+            <div class="section-heading">
+              <p class="eyebrow">A bit of background</p>
+              <h2 id="education-title">Education</h2>
+            </div>
+            <p>{education}</p>
+          </section>
+
+          <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+            <div class="section-heading">
+              <p class="eyebrow">Say hello</p>
+              <h2 id="contact-title">Contact</h2>
+            </div>
+            <p>Have a project or just want to connect?</p>
+            <a class="contact-link" href={`mailto:${profile.email}`}>{profile.email} <span aria-hidden="true">↗</span></a>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} Keith. No cookies, no tracking.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+</BaseLayout>
