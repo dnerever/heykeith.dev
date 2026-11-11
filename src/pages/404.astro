@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Page not found | Keith" description="The page you're looking for could not be found.">
+  <main class="not-found">
+    <p class="eyebrow">404 · Page not found</p>
+    <h1>This page isn't here.</h1>
+    <p>The address may be out of date, or the page may have moved.</p>
+    <a href="/">Go back home <span aria-hidden="true">→</span></a>
+  </main>
+</BaseLayout>
+
+<style>
+  .not-found {
+    display: grid;
+    min-height: 75vh;
+    align-content: center;
+    justify-items: start;
+  }
+
+  .not-found h1 {
+    margin-bottom: 0.75rem;
+  }
+
+  .not-found p:not(.eyebrow) {
+    margin-bottom: 1.25rem;
+    color: #3a3f44;
+  }
+</style>
